@@ -17,7 +17,7 @@ class ListaEnlazada {
         this.final = null;
     }
 
-    // Metodo para verificar sinun valor ya existe en la lista
+    // Metodo para verificar sin un valor ya existe en la lista
     duplicado(valor){
         let aux = this.inicio;
         while (aux != null){
@@ -103,7 +103,7 @@ class LinkedList{
     }
 
     insertar(valor){
-        let nuevoNodo = new Nodo(valor);
+        let nuevoNodo = new Node(valor);
 
         if (this.inicio == null) {
             this.inicio = nuevoNodo;
@@ -128,7 +128,7 @@ class LinkedList{
         return resultados;
     }
 
-    // Método para convertir la lista enlazada en un arreglo
+    // Método para convertir la lista enlazada en un arreglo para poder mostrarlo en la consola
   toArray() {
     let aux = this.inicio;
     let array = [];
